@@ -14,32 +14,50 @@
 
     <section id= "inicio" class ="seccion">
       <div class="contenedorTexto">
-        <h1 class = "introName">Fondo ILE</h1>
-        <p class = "description">Ante la criminalización, tejemos redes</p>
+        <h1 class = "introName">Fondo IVE</h1>
+        <p class = "description">Ante la criminalización, tejemos redes</p> <br>
+        <p class = "textoDescripcion">Herramienta pensada como auxiliar tanto para acompañantas como usuarias;</p>
+          <p class="textoDescripcion"><strong>porfavor no la compartas a personas externas de la red.</strong></p>
+        
       </div>
-      <img id= imagenInicio src="IVE.png" alt="">
+      <img id= "imagenInicio" class= "imagenStyle" src="img/corazon.png" alt="corazonabortero">
      
     </section>
     
     <section id= "encode" class ="seccion">
-      <div class="contenedorTexto">
-        <h1 class = "introName">Codifica</h1>
-        <p class = "description">Copia y pega</p>
-        <textarea id="codeArea" rows="10" cols="50">Coloca aquí el texto que deseas codificar</textarea>
-       
-      </div>
-      <img id= imagenInicio src="morado.png" alt="">
+      <form id="contenedorCodificacion" class="contenedorTexto" autocomplete="off">
+        <h1 class = "name">Codifica</h1>
+        <p class = "descriptionPage">Copia y pega</p>
+        <div id="contenedorCodifica">
+          <textarea id="iOriginal" label="original" class="boxDesign" rows="12" cols="50" placeholder="Coloca aquí tu texto" required></textarea>
+          <textarea id="iResult" label="result" class="boxDesign" rows="12" cols="50" placeholder="Este texo debes enviarlo por whats, usa el botón COPY" readonly></textarea>
+        </div>
+        <div class="botones">
+          <label class="descripLabel">Elige el número de desplazamiento <input id="shift" class="shitfImput" type="number"  min="1" max="33"></label>
+          <input type="button" value="Encripta" class="submit" id="encrypt-btn">
+          <input type="button" id="copyToClipBoard" value="Copia" class="submit">
+          <input type="reset" id="reset" class="submit"  value="Borra">
+        </div>
+      </form>
+    
     </section>
 
     <section id= "decode" class ="seccion">
-      <div class="contenedorTexto">
-        <h1 class = "introName">Decodifica</h1>
-        <p class = "description">Copia y pega</p>
-        <textarea id="decodeArea" rows="10" cols="70">Coloca aquí el texto que deseas decodificar</textarea>
-        
-    </div>
-    <img id= imagenInicio src="corazon.png" alt="">
-   
+      <form id="contenedorDecodifica" class="contenedorTexto" autocomplete="off">
+        <h1 class = "name">Decodifica</h1>
+        <p class = "descriptionPage">Pega y lee</p>
+        <div>
+          <textarea id="codificado" label="codificado" class="boxDesignPurple" rows="12" cols="50" placeholder="Coloca aquí tu texto codificado (copia de whats y pega aquí)"> </textarea>
+          <textarea id="resultDecode"  label="resulado" class="boxDesignPurple" rows="12" cols="50" placeholder="Aquí aparecerá tu mensaje decodificado" readonly ></textarea>
+        </div>
+        <div class="botones">
+          <label class="descripLabel">Elige el número de desplazamiento <input id="shiftBack" class="shitfImputPurple" type="number"  min="1" max="33"></label>
+          <input type="button" value="Descifra" class="submitPurple" id="decode-btn">
+          <input type="reset" id="resetTwo" class="submitPurple" value="Borra">
+        </div>
+      </form>  
+    
+
     </section>
 
     <section id= "thanks" class ="seccion">
@@ -47,26 +65,28 @@
       <p class = "outText">Educación sexual para descubrir,<br>
         anticonceptivos para disfrutar,<br>
         aborto seguro para decidir.</p> <br>
-      <div class="box">
-        <p>Whats<br> (55) 4951 4336
-        </p>
+      <div>
+        <a class="box" href="https://wa.me/525549514336">WHATSAPP</a>
+      
         
       </div>
+      <p class="description"><strong>L-S de 9:00 a 20:00</strong></p>
+      <p class="description"><strong>Hora México</strong></p>
       
       
      
     </div>
     
-    <img id= imagenFinal src="corazon.png" alt="">
+    <img id= "imagenEnmedio" class= "imagenStyle" src="img/morado.png" alt="corazonabortero">
 
   
     </section>
   
     <nav class="menu">
-      <a id = "button" href="#inicio">Inicio</a>
-      <a id = "button" href="#encode">Codifica</a>
-      <a id = "button" href="#decode">Decodifica</a>
-      <a id = button href="#thanks">Dudas</a>
+      <a id = "buttonMenu1" class="menuButton" href="#inicio">Inicio</a>
+      <a id = "buttonMenu2" class="menuButton" href="#encode">Codifica</a>
+      <a id = "buttonMenu3" class="menuButton" href="#decode">Decodifica</a>
+      <a id = "buttonMenu4" class="menuButton" href="#thanks">Dudas</a>
     </nav>
 
     
