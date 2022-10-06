@@ -2,7 +2,7 @@
 *{
     margin: 0;
     padding:0;
-    box-sizing: 100%;
+    box-sizing: border-box;
     
 }
 .seccion {
@@ -162,8 +162,10 @@ html{
     padding: 10px;
     font-family:'Nunito', sans-serif;
     font-weight: 700;
-    font-size: 19px;
+    font-size: 14px;
     color: rgb(2, 110, 56);
+    margin-left: 20px;
+    margin-right: 20px;
 
 
 
@@ -184,8 +186,10 @@ html{
     padding: 10px;
     font-family:'Nunito', sans-serif;
     font-weight: 700;
-    font-size: 19px;
-    color: rgb(70, 0, 70);;
+    font-size: 14px;
+    color: rgb(70, 0, 70);
+    margin-left: 20px;
+    margin-right: 20px;
 
 
 
@@ -196,15 +200,15 @@ html{
     color:aliceblue;
     border-radius: 20px;
     border-color: rgb(70, 0, 70); 
-    width: 120px;
-    height: 60px;
+    width: 100px;
+    height: 50px;
     margin-top: 10px;
     margin-left: 20px;
     margin-right: 20px;
     cursor: pointer;
     font-family: 'Nunito', sans-serif;
     font-weight: 700;
-    font-size: 18px;
+    font-size: 14px;
     
 }
 
@@ -213,15 +217,15 @@ html{
     color:aliceblue;
     border-radius: 20px;
     border-color:  rgb(2, 110, 56) ;
-    width: 120px;
-    height: 60px;
+    width: 100px;
+    height: 50px;
     margin-top: 10px;
     margin-left: 20px;
     margin-right: 20px;
     cursor: pointer;
     font-family: 'Nunito', sans-serif;
     font-weight: 700;
-    font-size: 18px;
+    font-size: 14px;
     
 }
 

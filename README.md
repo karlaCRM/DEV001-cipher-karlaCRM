@@ -51,9 +51,14 @@ La mayoria de los acompañamientos se dan de manera asincrona pues las mujeres q
 
 Una vez recibido el proyecto, este se dividio en varías etapas, las cuales se describen a continuación: 
 
+
 ## 1. Diseño de prototipo base
 
-Se realizo un esquema 
+Se realizo un esquema general a mano respecto a como quería que se viera, en el proyecto de "QUIZ" había realizado mi página unida por medio de varios HMTL y esta vez quería probar que todo se desplegara en una misma con una smooth transition; la idea fue enfocar el diseño (lo visual) a eso. 
+
+<img src="img/wts.jpeg"/>
+
+
 
 
  * **Descifrar un mensaje**
