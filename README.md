@@ -46,6 +46,8 @@ La mayoria de los acompañamientos se dan de manera asincrona pues las mujeres q
 * Mediante el uso de la web app podrán comunicarse de manera "segura", está pensada como auxiliar en la comunicación por Whatsapp, una vez que la mujer que necesita acompañamiento contacta a la red, las Acompañantes le envían el acceso a la aplicación web y el número de offset en el cual estarán comunicandose. Así los textos se envian codificados al whats y una vez recibidos se decodifican. 
 * La idea es generar un espacio más seguro de comunicación para ambas, evitando que cualquier persona que tenga acceso a su whats pueda entender aquello de lo que hablan. 
 
+![img](src/abort.jpeg)
+
 
 # 5. Proceso
 
@@ -56,7 +58,8 @@ Una vez recibido el proyecto, este se dividio en varías etapas, las cuales se d
 
 Se realizo un esquema general a mano respecto a como quería que se viera, en el proyecto de "QUIZ" había realizado mi página unida por medio de varios HMTL y esta vez quería probar que todo se desplegara en una misma con una smooth transition; la idea fue enfocar el diseño (lo visual) a eso. 
 
-  ![img](src/img/wts.jpeg)
+  ![img](src/img/wts.jpeg)  ![img](src/img/FONDO1.png)
+  ![img](src/img/morado.png) ![img](src/img/corazon.png)
 
 
  * **Descifrar un mensaje**
