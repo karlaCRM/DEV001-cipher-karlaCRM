@@ -1,92 +1,60 @@
-# Cifrado César
+# Cifrado César Red de acompañamiento de Aborto
 
-## Índice
-
-* [1. Objetivos de aprendizaje generales](#1-objetivos-de-aprendizaje-generales)
-* [2. Preámbulo](#2-preámbulo)
-* [3. Resumen del proyecto](#2-resumen-del-proyecto)
-* [4. Consideraciones generales](#4-consideraciones-generales)
-* [5. Hito 1: Criterios de aceptación mínimos del proyecto](#5-hito-1-criterios-de-aceptación-mínimos-del-proyecto)
-* [6. Hito 2 (opcional): Agrega soporte para minúsculas y otros caracteres](#6-hito-2-(opcional)-agrega-soporte-para-minúsculas-y-otros-caracteres)
-* [7. Consideraciones técnicas](#7-consideraciones-técnicas)
-* [8. Objetivos de aprendizaje](#3-objetivos-de-aprendizaje)
-* [9. Pistas, tips y lecturas complementarias](#8-pistas-tips-y-lecturas-complementarias)
-* [10. Para considerar Project Feedback](#10-para-considerar-project-feedback)
 
 ***
 
-## 1. Objetivos de aprendizaje generales
-Como continuación del proyecto de preadmisión, volverás a trabajar sobre fundamentos de JavaScript, incluyendo conceptos como variables, condicionales, y funciones, así como eventos y manipulación básica del DOM, fundamentos de HTML y CSS.
+# Resumen del proyecto
 
-Mientras desarrollas este proyecto, te familiarizarás con estos nuevos conceptos:
+Se nos planteo la tarea de realizar una aplicación web en donde nuestros usuarios fueran capaces de cifrar y descifrar un mensaje en el navegador mediante el uso del cifrado caesar y que a su vez fuera una posibilidad para las usuarias seleccionar el número (offset) de desplazamiento con el que querrian cifrar su mensaje. 
+La idea principal esta planteada para que:
 
-* Un _boilerplate_, la estructura básica de un proyecto en distintas carpetas (a través `modulos` en JS).
-* Las herramientas de mantenimiento y mejora del código (linters y pruebas unitarias).
-* Objetos en JavaScript, su estructura y métodos.
-* Iteración (bucles) en JavaScript.
-* Control de versiones con git (y la plataforma github)
-
-## 2. Preámbulo
-
-Cifrar significa codificar. El [cifrado César](https://en.wikipedia.org/wiki/Caesar_cipher)
-es uno de los primeros métodos de cifrado conocidos. El emperador romano Julio
-César lo usaba para enviar órdenes secretas a sus generales en los campos de
-batalla.
-
-El cifrado césar es una de las técnicas más simples para cifrar un mensaje. Es
-un tipo de cifrado por sustitución, es decir que cada letra del texto original
-es reemplazada por otra que se encuentra un número fijo de posiciones
-(desplazamiento) más adelante en el mismo alfabeto.
-
-![caeser-cipher](https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Caesar3.svg/2000px-Caesar3.svg.png)
-
-Por ejemplo, si usamos un desplazamiento (_offset_) de 3 posiciones:
-
-* La letra A se cifra como D.
-* La palabra CASA se cifra como FDVD.
-* Alfabeto sin cifrar: A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
-* Alfabeto cifrado: D E F G H I J K L M N O P Q R S T U V W X Y Z A B C
-
-En la actualidad, todos los cifrados de sustitución simple se descifran con
-mucha facilidad y, aunque en la práctica no ofrecen mucha seguridad en la
-comunicación por sí mismos; el cifrado César sí puede formar parte de sistemas
-más complejos de codificación, como el cifrado Vigenère, e incluso tiene
-aplicación en el sistema ROT13.
-
-## 3. Resumen del proyecto
-
-En este proyecto crearás una aplicación web que servirá para que tu usuaria
-pueda cifrar y descifrar un texto en el navegador indicando un desplazamiento específico de
-caracteres (_offset_). Lo harás utilizando HTML, CSS y JavaScript.
-
-La temática es libre. Piensa en qué situaciones se necesitaría cifrar un mensaje. Decide 
-cómo debe ser esa experiencia de uso (qué pantallas, explicaciones, mensajes, colores, etc.) 
-Algunas ideas de ejemplo:
-
-* Crear claves seguras para el email.
-* Encriptar/cifrar una tarjeta de crédito.
-* Herramienta de mensajería interna de una organización de derechos humanos en
-  una zona de conflicto.
-* Mensajería secreta para parejas.
-
-## 4. Consideraciones generales
-
-* Este proyecto lo resolvemos de manera individual. Te recomendamos una duracion de 1-3 sprints.
-* Enfócate en aprender y no solamente en "completar" el proyecto. Te va a costar.
-* Te sugerimos que no intentes saberlo todo antes de empezar a codear. No te preocupes demasiado ahora por lo que _todavía_ no entiendas. Irás aprendiendo.
+* El cifrador fuera capaz de cifrar MAYUSCULAS.
+* Se pudiera cifrar el mensaje con un número de desplazamiento comprendido entre el 1 y el 33. 
+* El mensaje cifrado apareciera en pantalla. 
+* Se pudiera descifrar el mensaje previamente cifrado. 
 
 
-## 5. Hito 1: Criterios de aceptación mínimos del proyecto 
+### ¿Qué es el cifrado caesar?
 
-Estos son los requisitos que tu proyecto debe que cumplir para asegurar que tu trabajo cubra los objetivos principales.  
+Es un metodo de cifrado de texto de sustitución simple también conocido como cifrado por desplazamiento mediante el cual una letra es reemplazada por otra que se encuentra a determinado número de posiciones más adelante en nuestro alfabeto.
+Un ejemplo sería si quisieramos cifrar la letra A con un desplazamiento de 2 espacios, entonces en vez de colocar la "A" esta sería sustituida por la "C".
 
-**1. Una interfaz que debe permitir a la usuaria:**
 
-  * **Cifrar un mensaje**
-    * Insertar el mensaje (texto) que quiere cifrar. El mensaje usa alfabeto simplificado (solamente mayúsculas y sin ñ).
-    * Elegir un numero de desplazamiento (_offset_) indicando cuántas posiciones quieres que
-  el cifrado desplace cada caracter en el alfabeto. El numero sera positivo y entero (positive integer).
-    * Ver el resultado del mensaje cifrado.
+## Problemática
+
+El acceso al aborto  legal, seguro y gratuido en México actualmente y a pesar de que hace un año la Suprema Corte de Justicia de la Nación emitio un fallo a favor de la despenalizacion del aborto en el país (asento jurisprudencia) sigue siendo una cuestión que no termina de concretarse. De las 32 Entidades Federativas con las que consta el país, todavía existen 22 entidades que no han "dado su brazo a torcer" y en las cuales las mujeres todavía encuentran limitantes para abortar, siendo un daño directo a sus derechos fundamentales. 
+Ciudad de México fue la primera entidad en despenalizar el aborto hasta la semana 12 de gestación, por ello se erigio como el "bastión" de la lucha por el derecho a abortar.
+Aun así el aborto existe en todo el País y cientos (o miles) de mujeres abortan en el contexto de la clandestinidad, un aborto clandestino sin la información correcta o cuidados adecuados es inseguro, llevando a las mujeres a arriesgar su vida por el hecho de tomar decisiones sobre su propio cuerpo. 
+Ante este panorama grupos de mujeres han tejido redes de apoyo para acompañar, auxiliar y permitir el acceso a mujeres de todo el país a un aborto seguro pues clandestino NO es sinonimo de inseguro. El aborto en casa con medicamento ha demostrado que con la información y el acompañamiento adecuados es altamente seguro. 
+* Las mujeres que dan acompañamientos también arriesgan su integridad al compartir información o medicamentos a las mujeres en situación de aborto, siendo necesario buscar establecer estrategias que garanticen su seguridad.
+* Las mujeres en situación de aborto aparte de tener que enfrentar un contexto de criminalización por parte del Estado también luchan contra el estigma social o la falta de apoyo familiar o de la pareja; ante esta situación muchas buscan el acompañamiento al encontrarse solas ante la decisión y su integridad corre riesgo si la desición que tomaron se llegará a saber en su nucleo cercano, ante esto también es necesario que cuenten con vías de comunicación seguras para enviar dudas o recibir información.
+
+![img](https://imagenes.elpais.com/resizer/Kv7JUMxBOckAGKc7ygRcgdKsI7w=/1960x1470/arc-anglerfish-eu-central-1-prod-prisa.s3.amazonaws.com/public/4KOCEBMKANAATAHEN4AH3TKRZY.aspx)
+
+
+## 3. A quién va enfocado
+
+Este proyecto fue pensado como herramienta de una Red de Acompañamiento de Aborto llamada "Fondo ILE" en donde usuarias fueran tanto las Acompañantes que comparten los protocolos y dan seguimiento a los abortos como a las mujeres que se acercan a la red solicitando información, dando datos respecto a semanas de embarazo o su contexto personal. 
+
+La mayoria de los acompañamientos se dan de manera asincrona pues las mujeres que se acercan a la red leen los mensajes o responden cuando les es posible, siento mucho más seguro que el mensaje que reciban se encuentre cifrado y no al alcance de cualquiera. 
+
+* Acompañantes de Fondo ILE
+* Mujeres en situación de aborto
+
+## 4. Cómo el proyecto resuelve sus problemas.
+
+* Mediante el uso de la web app podrán comunicarse de manera "segura", está pensada como auxiliar en la comunicación por Whatsapp, una vez que la mujer que necesita acompañamiento contacta a la red, las Acompañantes le envían el acceso a la aplicación web y el número de offset en el cual estarán comunicandose. Así los textos se envian codificados al whats y una vez recibidos se decodifican. 
+* La idea es generar un espacio más seguro de comunicación para ambas, evitando que cualquier persona que tenga acceso a su whats pueda entender aquello de lo que hablan. 
+
+
+# 5. Proceso
+
+Una vez recibido el proyecto, este se dividio en varías etapas, las cuales se describen a continuación: 
+
+## 1. Diseño de prototipo base
+
+Se realizo un esquema 
+
 
  * **Descifrar un mensaje**
     * Insertar el mensaje (texto) que quieres descifrar. El mensaje usa alfabeto simplificado (solamente mayúsculas y sin ñ).
@@ -109,7 +77,7 @@ Estos son los requisitos que tu proyecto debe que cumplir para asegurar que tu t
 
 Con estos requisitos cumplidos puedes agendar un Project Feedback con unx coach.
 
-## 6. Hito 2 (opcional): Agrega soporte para minúsculas y otros caracteres
+## 6. Decisión de diseño
 
 Las partes "opcionales" tienen como intención permitirte profundizar un poco más sobre 
 los objetivos de aprendizaje del proyecto. Todo en la vida tiene pros y contras, decide 
@@ -119,7 +87,7 @@ nuevas en el siguiente proyecto.
 El hito 1 no menciona qué pasaría con las letras minúsculas y otros caracteres (como espacios, puntuación, ñ, ...). El _boilerplate_ incluye algunos _tests_ (comentados en principio) que 
 puedes usar como punto de partida para implementar el soporte para estos casos adicionales.
 
-## 7. Consideraciones técnicas
+## 7. Diseño final
 
 La lógica del proyecto debe estar implementada completamente en JavaScript. En
 este proyecto NO está permitido usar librerías o frameworks, solo JavaScript puro
@@ -154,7 +122,7 @@ El boilerplate que les damos contiene esta estructura:
     └── cipher.spec.js
 ```
 
-### Descripción de scripts / archivos
+## ¿Como se usa?
 
 * `README.md`: debe explicar la información necesaria para el uso de tu aplicación web,
   así como una introducción a la aplicación, su funcionalidad y decisiones de
@@ -200,7 +168,7 @@ El comando `npm run deploy` puede ayudarte con esta tarea y también puedes
  
 ***
 
-## 8. Objetivos de aprendizaje
+## 8. Objetivos alcanzados
 
 Reflexiona y luego marca los objetivos que has llegado a entender y aplicar en tu proyecto. Piensa en eso al decidir tu estrategia de trabajo.
 

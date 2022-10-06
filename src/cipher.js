@@ -2,7 +2,7 @@ const cipher = {
     encode (offset, stringO){
 
         if(offset== null || stringO==[]){
-            throw new TypeError("No has ingresado texto");
+            throw  TypeError("No has ingresado texto");
         }
 
         let letter= stringO;
@@ -47,7 +47,7 @@ const cipher = {
     ,decode (offsetTwo,codToUncode){
        
         if(offsetTwo== null || codToUncode==[]){
-            throw new TypeError("No has pegado texto");
+            throw  TypeError("No has pegado texto");
         }
 
         let textCode = codToUncode; //texto recibido
