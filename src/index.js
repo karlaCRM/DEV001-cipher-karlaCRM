@@ -33,4 +33,4 @@ function copyToClipBoard() {
 
 }
 
-console.log(cipher);
+//console.log(cipher);
