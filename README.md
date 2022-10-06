@@ -56,7 +56,7 @@ Una vez recibido el proyecto, este se dividio en varías etapas, las cuales se d
 
 Se realizo un esquema general a mano respecto a como quería que se viera, en el proyecto de "QUIZ" había realizado mi página unida por medio de varios HMTL y esta vez quería probar que todo se desplegara en una misma con una smooth transition; la idea fue enfocar el diseño (lo visual) a eso. 
 
-         ![](src/img/wts.jpeg)
+  ![img](src/img/wts.jpeg)
 
 
  * **Descifrar un mensaje**
