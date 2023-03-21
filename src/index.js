@@ -1,4 +1,7 @@
+
 import cipher from './cipher.js';
+
+
 let containerResult = document.getElementById('iResult');
 document.getElementById("encrypt-btn").addEventListener("click", cifrar)
 
@@ -27,10 +30,11 @@ document.getElementById("copyToClipBoard").addEventListener("click", copyToClipB
 function copyToClipBoard() {
     
     containerResult.select();
-    document.execCommand("copy");
+    navigator.clipboard.writeText(containerResult.value).then(() =>{
+        alert("Tu texto codificado se encuentra en el portapapeles, ya solo debes pegarlo en el whats <3");
+    })
 
-    alert("Tu texto codificado se encuentra en el portapapeles, ya solo debes pegarlo en el whats <3");
-
+  
 }
 
 //console.log(cipher);

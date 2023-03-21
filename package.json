@@ -21,10 +21,13 @@
     "htmlhint": "^1.0.0",
     "jest": "^27.0.1",
     "opener": "^1.5.1",
-    "serve": "^13.0.2"
+    "serve": "^13.0.2",
+    "sweetalert2": "^11.7.3"
   },
   "engines": {
     "node": ">=16.x"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.2.7"
   }
 }
-

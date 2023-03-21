@@ -1,4 +1,5 @@
 
+
 *{
     margin: 0;
     padding:0;
@@ -9,10 +10,50 @@
     width: 100%;
     height: 100vh;
     display: flex;
-    justify-content: space-evenly;
-    padding: 0 40px;
+    padding: 0 1.3em;
     align-items: center;
     flex-flow: row wrap;
+   
+
+}
+
+.contCod{
+    display: flex;
+    width: 98%;
+}
+.seccionEncode{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2em;
+    height: 100vh;
+    align-items: center;
+}
+
+.seccionDecode{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2em;
+    height: 100vh;
+    align-items: center;
+}
+
+.seccionThanks{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2em;
+    height: 100vh;
+    align-items: center;
+}
+
+.row{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 1.5em;
+    align-items: center;
 }
 
 html{
@@ -40,16 +81,32 @@ html{
     background-image: url(img/FONDO2.png);
 }
 
+.boxAlign{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.contenedorTexto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
 .introName{
     display: flex;
     align-items: center;
     justify-content: center;
+    line-height: 0.9;
     font-family: 'Nunito', sans-serif;
     font-weight: 900;
-    font-size: 140px;
+    font-size: 5.7em;
     text-transform: uppercase;
     color: aliceblue;
-    text-shadow: 2px 4px 4px rgb(19, 0, 27)
+    text-shadow: 2px 4px 4px rgb(19, 0, 27);
+    width: 97%;
+   
 }  
 .name{
     display: flex;
@@ -57,19 +114,21 @@ html{
     font-family: 'Nunito', sans-serif;
     justify-content: center;
     font-weight: 900;
-    font-size: 140px;
+    font-size: 6em;
     text-transform: uppercase;
     color: aliceblue;
-    text-shadow: 2px 4px 4px rgb(19, 0, 27)
+    text-shadow: 2px 4px 4px rgb(19, 0, 27);
+    margin-bottom: -0.3em;
 }  
 
 .description{
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     justify-content: center;
     font-family: 'Nunito', sans-serif;
     font-weight: 400;
-    font-size: 36px;
+    font-size: 1.6em;
     color: aliceblue;
     text-transform: uppercase;
     margin-bottom: 4px;
@@ -82,7 +141,7 @@ html{
     justify-content: center;
     font-family: 'Nunito', sans-serif;
     font-weight: 700;
-    font-size: 45px;
+    font-size: 2em;
     color: aliceblue;
     text-transform: uppercase;
     margin-bottom: 10px;
@@ -92,7 +151,7 @@ html{
 .outText{
     font-family: 'Nunito', sans-serif;
     font-weight: 700;
-    font-size: 42px;
+    font-size: 2em;
     color: aliceblue;
     text-shadow: 2px 4px 3px rgb(0, 0, 0);
     text-transform: uppercase;
@@ -101,13 +160,12 @@ html{
     
 }
 
-.imagenStyle{
-    height: 80%;
+.finalImage{
+    width:12em
 }
 
-#imagenFinal{
-    height: 70%;
-
+.imagenStyle{
+   width:12em
 }
 
 .menu{
@@ -128,7 +186,7 @@ html{
     font-family: 'Nunito', sans-serif;
     font-weight: 900;
     font-size: 30px;
-    line-height: 1.4em;
+    line-height: 1.3em;
     width: 25%;
     display: block;
     float: left;
@@ -157,7 +215,7 @@ html{
 
 .boxDesign{
     background-color: aliceblue;
-     border-radius: 10px;
+    border-radius: 10px;
     border: 5px solid rgb(70, 0, 70);
     padding: 10px;
     font-family:'Nunito', sans-serif;
@@ -174,7 +232,7 @@ html{
 .descripLabel{
     font-family:'Nunito', sans-serif;
     font-weight: 700;
-    font-size: 22px;
+    font-size: 1em;
     color: aliceblue;
     text-shadow: 2px 4px 3px rgba(20, 0, 29, 0.459)
 
@@ -235,10 +293,10 @@ html{
     justify-content: center;
     font-family: 'Nunito', sans-serif;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 0.9em;
     color: aliceblue;
     text-transform: uppercase;
-    margin-bottom: 4px;
+    margin-bottom: 0.4em;
 }
 
 
@@ -249,6 +307,7 @@ html{
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    width: 99%;
 
 
 }
@@ -292,3 +351,176 @@ html{
    
 
 }
+
+@media screen and (max-device-width: 650px) {
+    .row{
+        flex-direction: column;
+        padding-left: 2em;
+        padding-right: 2em;
+        
+    }
+
+    .introName{
+        font-size: 10em;
+    } 
+
+    .description{
+    
+        font-size: 3.3em;
+        margin-top: 1em;
+        line-height: 1;
+       
+    }
+
+    .textoDescripcion{
+        font-size: 1.8em;
+        padding-left: 1.4em;
+        padding-right: 1.4em;
+        line-height: 1.8em;
+    }
+
+    .imagenStyle{
+        width:16em
+     }
+     .contCod{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 1.5em;
+        margin-bottom: 2em;
+        margin-top: 4em;
+    }
+    .contenedorTexto{
+        height: 70%;
+        justify-content: space-around;
+        text-align: center;
+        width: 98%;
+    
+    }
+     
+.seccion{
+    height: auto;
+    padding-top: 6em;
+    padding-bottom: 6em;
+}
+.botones{
+    flex-direction: column;
+    
+}
+.descripLabel{
+
+    font-size: 3em;
+flex-direction: column;
+display: flex;
+align-items: center;
+}
+
+
+.shitfImput{
+    height:3em ;
+    width: 60%;
+    font-size: 0.8em;
+    margin-bottom: 1em;
+   
+
+}
+
+.shitfImputPurple{
+    height:3em ;
+    width: 60%;
+    font-size: 0.8em;
+    margin-bottom: 1em;
+   
+
+}
+
+.seccionEncode {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2em;
+    height:fit-content;
+    align-items: flex-start;
+    padding-top: 5em;
+}
+
+
+.boxDesign{
+   
+    padding: 1em;
+    color: rgb(2, 110, 56);
+    height: 20em;
+    margin-bottom: 1em;
+    font-size: 1.2em;
+}
+
+.boxDesignPurple{
+    padding: 1em;
+    height: 20em;
+    margin-bottom: 1em;
+    font-size: 1.2em;
+
+
+}
+textarea::placeholder {
+    font-size: 1.2em;
+  }
+
+  .buttonsRow{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    margin-bottom: 7em;
+
+  }
+  .submit{
+    
+    width: 6em;
+    height: 3em;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    font-size: 2em;
+    
+}
+
+.submitPurple{
+    width: 6em;
+    height: 3em;
+    font-size: 2em;
+    
+}
+
+.seccionDecode{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2em;
+    height:fit-content;
+    align-items: flex-start;
+    padding-top: 5em;
+}
+.seccionThanks{
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 2em;
+    height: 100vh;
+    align-items: center;
+}
+.outText{
+    margin-top: 1.5em;
+    font-size: 3em;
+    padding-left: 1em;
+    padding-right: 1em;
+    
+}
+.mex{
+    display: flex;
+    flex-direction: column;
+    justify-content:  center;
+}
+
+  }
