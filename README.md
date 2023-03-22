@@ -5,81 +5,79 @@ Aquí puedes ver la web app funcionando  [web app red de acompañamiento](https:
 
 # Resumen del proyecto
 
-Se nos planteo la tarea de realizar una aplicación web en donde nuestros usuarios fueran capaces de cifrar y descifrar un mensaje en el navegador mediante el uso del cifrado caesar y que a su vez fuera una posibilidad para las usuarias seleccionar el número (offset) de desplazamiento con el que querrian cifrar su mensaje. 
-La idea principal esta planteada para que:
+We were tasked with creating a web application where our users could encrypt and decrypt a message in their browser using the Caesar cipher, and where users could select the number (offset) they wanted to use to encrypt their message. The main idea was for:
 
-* El cifrador fuera capaz de cifrar MAYUSCULAS.
-* Se pudiera cifrar el mensaje con un número de desplazamiento comprendido entre el 1 y el 33. 
-* El mensaje cifrado apareciera en pantalla. 
-* Se pudiera descifrar el mensaje previamente cifrado. 
-
-
-### ¿Qué es el cifrado caesar?
-
-Es un metodo de cifrado de texto de sustitución simple también conocido como cifrado por desplazamiento mediante el cual una letra es reemplazada por otra que se encuentra a determinado número de posiciones más adelante en nuestro alfabeto.
-Un ejemplo sería si quisieramos cifrar la letra A con un desplazamiento de 2 espacios, entonces en vez de colocar la "A" esta sería sustituida por la "C".
+* The cipher to be able to encrypt capital letters.
+* The message could be encrypted with an offset number between 1 and 33.
+* The encrypted message can be show on the screen.
+* The previously encrypted message could be decrypted. 
 
 
-## Problemática
+### What is the Caesar cipher?
 
-El acceso al aborto  legal, seguro y gratuido en México actualmente y a pesar de que hace un año la Suprema Corte de Justicia de la Nación emitio un fallo a favor de la despenalizacion del aborto en el país (asento jurisprudencia) sigue siendo una cuestión que no termina de concretarse. De las 32 Entidades Federativas con las que consta el país, todavía existen 22 entidades que no han "dado su brazo a torcer" y en las cuales las mujeres todavía encuentran limitantes para abortar, siendo un daño directo a sus derechos fundamentales. 
-Ciudad de México fue la primera entidad en despenalizar el aborto hasta la semana 12 de gestación, por ello se erigio como el "bastión" de la lucha por el derecho a abortar.
-Aun así el aborto existe en todo el País y cientos (o miles) de mujeres abortan en el contexto de la clandestinidad, un aborto clandestino sin la información correcta o cuidados adecuados es inseguro, llevando a las mujeres a arriesgar su vida por el hecho de tomar decisiones sobre su propio cuerpo. 
-Ante este panorama grupos de mujeres han tejido redes de apoyo para acompañar, auxiliar y permitir el acceso a mujeres de todo el país a un aborto seguro pues clandestino NO es sinonimo de inseguro. El aborto en casa con medicamento ha demostrado que con la información y el acompañamiento adecuados es altamente seguro. 
-* Las mujeres que dan acompañamientos también arriesgan su integridad al compartir información o medicamentos a las mujeres en situación de aborto, siendo necesario buscar establecer estrategias que garanticen su seguridad.
-* Las mujeres en situación de aborto aparte de tener que enfrentar un contexto de criminalización por parte del Estado también luchan contra el estigma social o la falta de apoyo familiar o de la pareja; ante esta situación muchas buscan el acompañamiento al encontrarse solas ante la decisión y su integridad corre riesgo si la desición que tomaron se llegará a saber en su nucleo cercano, ante esto también es necesario que cuenten con vías de comunicación seguras para enviar dudas o recibir información.
+It is a simple substitution cipher method also known as a shift cipher, whereby a letter is replaced by another letter that is a certain number of positions ahead in our alphabet. For example, if we wanted to encrypt the letter A with a shift of 2 spaces, then instead of using "A", it would be replaced by "C".
+
+
+## Complexitie
+
+Access to legal, safe, and free abortion in Mexico is currently a matter that has not yet been fully realized, despite a Supreme Court ruling in favor of decriminalizing abortion in the country a year ago (establishing jurisprudence). Of the 32 federal entities in the country, there are still 22 that have not "given in" and in which women still encounter limitations to accessing abortion, which is a direct harm to their fundamental rights.
+
+Mexico City was the first entity to decriminalize abortion up to 12 weeks of gestation, thus becoming the "stronghold" of the fight for the right to abortion.
+
+However, abortion still exists throughout the country, and hundreds (or thousands) of women have abortions in the context of secrecy. A clandestine abortion without the correct information or adequate care is unsafe, leading women to risk their lives for the sake of making decisions about their own bodies.
+
+In the face of this situation, groups of women have woven support networks to accompany, assist, and allow access to safe abortions for women throughout the country. Because clandestine does NOT mean unsafe, home abortion with medication has been shown to be highly safe with the appropriate information and support. 
+* Women who provide support also risk their own safety by sharing information or medication with women seeking abortions, so it is necessary to establish strategies that guarantee their safety.
+* Women seeking abortions not only face a context of criminalization by the state but also struggle against social stigma or lack of family or partner support. Faced with this situation, many seek accompaniment as they are alone in their decision, and their integrity is at risk if their decision were to become known in their close circle. Therefore, it is also necessary for them to have secure communication channels to send doubts or receive information.
 
 ![img](https://imagenes.elpais.com/resizer/Kv7JUMxBOckAGKc7ygRcgdKsI7w=/1960x1470/arc-anglerfish-eu-central-1-prod-prisa.s3.amazonaws.com/public/4KOCEBMKANAATAHEN4AH3TKRZY.aspx)
 
 
-## 3. A quién va enfocado
+## 3. Who is the target audience?
 
-Este proyecto fue pensado como herramienta de una Red de Acompañamiento de Aborto llamada "Fondo ILE" en donde usuarias fueran tanto las Acompañantes que comparten los protocolos y dan seguimiento a los abortos como a las mujeres que se acercan a la red solicitando información, dando datos respecto a semanas de embarazo o su contexto personal. 
+This project was designed as a tool for an Abortion Support Network called "Fondo ILE," where both Accompaniers who share protocols and follow up on abortions, as well as women who approach the network requesting information and providing data on their personal context, would be the users.
 
-La mayoria de los acompañamientos se dan de manera asincrona pues las mujeres que se acercan a la red leen los mensajes o responden cuando les es posible, siento mucho más seguro que el mensaje que reciban se encuentre cifrado y no al alcance de cualquiera. 
+Most of the support is given asynchronously since women who approach the network read the messages or respond when it is possible for them, and it is much safer for the message they receive to be encrypted and not within anyone's reach.
 
-* Acompañantes de Fondo ILE
-* Mujeres en situación de aborto
+* Accompaniers from Fondo ILE
+* Women in need of abortion support
 
-## 4. Cómo el proyecto resuelve sus problemas.
+## 4. How does the project solve their problems?.
 
-* Mediante el uso de la web app podrán comunicarse de manera "segura", está pensada como auxiliar en la comunicación por Whatsapp, una vez que la mujer que necesita acompañamiento contacta a la red, las Acompañantes le envían el acceso a la aplicación web y el número de offset en el cual estarán comunicandose. Así los textos se envian codificados al whats y una vez recibidos se decodifican. 
-* La idea es generar un espacio más seguro de comunicación para ambas, evitando que cualquier persona que tenga acceso a su whats pueda entender aquello de lo que hablan. 
+* The project solves the problem of secure communication between the women seeking support and the accompanying members of Fondo ILE by providing a web app. It is designed to assist communication through WhatsApp, and once a woman contacts the network seeking support, the accompanying members provide her with access to the web app and an offset number for communication. Text messages are then encrypted before being sent to WhatsApp and decoded upon receipt.
+* The goal is to provide a safer space for communication for both parties, preventing anyone who has access to their WhatsApp from understanding what they are talking about.
 
 ![img](src/abort.jpeg)
 
 
-# 5. Proceso
+# 5. Process
 
-Una vez recibido el proyecto, este se dividio en varías etapas, las cuales se describen a continuación: 
+The project was divided into different stages.
 
 
-## 1. Diseño de prototipo base
+## 1. Prototype design
 
-Se realizo un esquema general a mano respecto a como quería que se viera, en el proyecto de "QUIZ" había realizado mi página unida por medio de varios HMTL y esta vez quería probar que todo se desplegara en una misma con una smooth transition; la idea fue enfocar el diseño (lo visual) a eso. 
+The general layout was sketched by hand, outlining how it should look. In my previous project "QUIZ", I had created several HTML pages linked together, and this time I wanted to try having everything displayed on a single page with a smooth transition. The focus of the design was to achieve this transition and make it visually appealing.
 
   ![img](src/img/readme1_Mesa%20de%20trabajo%201.png)
 
-  La idea es que la misma página se conecte directamente con el whatsapp de la asociación que es atendido por las acompañantes. 
 
 
-## 2. Decisión de diseño
+## 2. Design 
 
-Se opto por un fondo en dos colores alucivos a la lucha por el acceso al aborto y el morado asociado a la lucha feminista, el patrón se descargó de freepik.
-Se uso una ilustración hecha por mi para el 28s en México.
-Se optó por una tipografía san serif pues genera bastante contraste y da la sensación de "modernidad". 
-La intención era crear una página con un diseño fresco, alejado a la idea de "hospital" o servicio médico, pues no es la idea. El acompañamiento parte de la base de empoderar a las mujeres sobre su cuerpo y decisiones y no en simplemente prestar un servicio de salud. 
+We opted for a background in two colors alluding to the fight for access to abortion, with purple associated with the feminist movement. The pattern was downloaded from Freepik. I used an illustration I made for the September 28th movement in Mexico.
 
+We chose a sans-serif typography as it generates enough contrast and gives a feeling of "modernity". The intention was to create a page with a fresh design, away from the idea of a "hospital" or medical service, as this is not the goal. The accompaniment is based on empowering women about their bodies and decisions, not just providing a health service.
 
 
 ##  ¿Como se usa?
 
-*  1. Se escribe en el área de texto lo que deseas codificar.
-*  2. Se selecciona un número de desplazamiento (la idea es que la acompañante te especifique cual desde un principio)
-*  3. Se da click en botón encriptar y posteriormente en botón copiar. El texto será copiado a portapapeles. 
-*  4. El texto codificado se envia al whats. 
-*  5. La usuaria recibe respuesta con el texto codificado por su whats , lo copia y pega en la sección morada de Descifrar. 
-*  6. Establece el número de offset /desplazamiento y da click en Descifra. 
+*  1. Open the web app and type the text you want to encode in the text area.
+*  2. Select a shift number (the idea is that the Accompaniers from Fondo ILE specifies it to you from the beginning).
+*  3. Click on the "Encriptar" button and then on the "Copiar" button. The encrypted text will be copied to the clipboard.
+*  4. Send the encrypted text to the accompaniers via WhatsApp.
+*  5. The user receives a response with the encrypted text on WhatsApp, copies it, and pastes it into the purple "Descifrar" section of the web app.
+*  6. Set the offset/shift number and click on "Descifra" to decode the message.
 
 ![img](src/img/comofunc.png)
 
