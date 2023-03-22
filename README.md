@@ -71,10 +71,6 @@ Se optó por una tipografía san serif pues genera bastante contraste y da la se
 La intención era crear una página con un diseño fresco, alejado a la idea de "hospital" o servicio médico, pues no es la idea. El acompañamiento parte de la base de empoderar a las mujeres sobre su cuerpo y decisiones y no en simplemente prestar un servicio de salud. 
 
 
-## 3. Diseño final
-
-![img](src/img/readme2.png)
-
 
 ##  ¿Como se usa?
 
