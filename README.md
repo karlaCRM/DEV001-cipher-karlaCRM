@@ -1,9 +1,9 @@
-# Cifrado César Red de acompañamiento de Aborto
+# The Cesar Cipher Abortion Accompaniment Network
 
-Aquí puedes ver la web app funcionando  [web app red de acompañamiento](https://karlacrm.github.io/DEV001-cipher-karlaCRM.github.io/).
+Here you can try it:   [web app red de acompañamiento](https://karlacrm.github.io/DEV001-cipher-karlaCRM.github.io/).
 ***
 
-# Resumen del proyecto
+# Project summary
 
 We were tasked with creating a web application where our users could encrypt and decrypt a message in their browser using the Caesar cipher, and where users could select the number (offset) they wanted to use to encrypt their message. The main idea was for:
 
