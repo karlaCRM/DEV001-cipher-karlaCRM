@@ -47,7 +47,6 @@ Most of the support is given asynchronously since women who approach the network
 * The project solves the problem of secure communication between the women seeking support and the accompanying members of Fondo ILE by providing a web app. It is designed to assist communication through WhatsApp, and once a woman contacts the network seeking support, the accompanying members provide her with access to the web app and an offset number for communication. Text messages are then encrypted before being sent to WhatsApp and decoded upon receipt.
 * The goal is to provide a safer space for communication for both parties, preventing anyone who has access to their WhatsApp from understanding what they are talking about.
 
-![img](src/abort.jpeg)
 
 
 # 5. Process
@@ -70,7 +69,7 @@ We opted for a background in two colors alluding to the fight for access to abor
 We chose a sans-serif typography as it generates enough contrast and gives a feeling of "modernity". The intention was to create a page with a fresh design, away from the idea of a "hospital" or medical service, as this is not the goal. The accompaniment is based on empowering women about their bodies and decisions, not just providing a health service.
 
 
-##  ¿Como se usa?
+##  How to use it?
 
 *  1. Open the web app and type the text you want to encode in the text area.
 *  2. Select a shift number (the idea is that the Accompaniers from Fondo ILE specifies it to you from the beginning).
